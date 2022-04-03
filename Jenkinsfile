@@ -4,11 +4,30 @@ pipeline {
 
     stages {
 
-        stage('build') {
+        stage('Dev') {
 
             steps {
 
-                echo "Hello World!"
+                echo "Hello World Dev env"
+
+            }
+
+        }
+         stage('Test') {
+
+            steps {
+
+                echo "Hello World Test Env"
+
+            }
+
+        }
+        
+        stage('Stage') {
+
+            steps {
+
+                echo "Hello World Stage Env"
 
             }
 
